@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "learnima",
+    "slug": "learnima",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "learnima"
+}
