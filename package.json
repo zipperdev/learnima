@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start --dev-client",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "start": "react-native start",
+    "start:reset": "watchman watch-del-all & react-native start --reset-cache",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "web": "expo start --web"
   },
   "dependencies": {
@@ -13,10 +14,18 @@
     "expo-splash-screen": "~0.18.2",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-native": "0.71.8",
+    "styled-components": "^5.3.11"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@tsconfig/react-native": "^3.0.2",
+    "@types/jest": "^29.5.1",
+    "@types/react": "^18.2.7",
+    "@types/react-test-renderer": "^18.0.0",
+    "@types/styled-components": "^5.1.26",
+    "@types/styled-components-react-native": "^5.2.1",
+    "typescript": "^5.0.4"
   },
   "private": true
 }
