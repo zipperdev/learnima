@@ -26,8 +26,17 @@
 `useRef`는 **렌더링이 일어나도 값을 유지하는 후크**이다.
 만약 애니메이션이 `state`에 따라 움직인다면 `useRef`로 렌더링이 일어났을 때 값을 유지시킬 수 있다
 (`useRef(new Animated.Value(0)).current` useRef는 current로 값을 알 수 있음)
+(주의! 따라서 _`useRef` 안에서_ `useState` 등 **렌더링을 일으키는 요소가 갱신되지 않음**)
 
 ### Interpolation
 
 `interpolation`을 사용할 때는 `Animated.Value`의 내장 함수인 `interpolate`를 사용하면 된다. (`new Animated.Value(0).interpolate({ ... })`)
 `interpolate`는 첫번째 인수에 `inputRange`와 `outputRange`가 있는데, 각 인덱스마다 변환을 줄 값을 말한다.
+
+### Extrapolate
+
+`interpolate` 함수에서 제공된 값의 범위를 넘었을 때 처리하는 것을 `extrapolate`이라고 한다.
+`interpolate` 함수의 `extrapolate` 속성을 변경시키면 된다.
+`clamp`는 범위를 넘으면 마지막 **값을 유지하는 것**이고,
+`extend`는 범위 패턴을 통해 **직접 채워넣는 것**이고,
+`identity`는 `interpolate` 함수의 **기존 값을 반환하는 것**이다.
