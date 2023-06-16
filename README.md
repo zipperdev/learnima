@@ -2,7 +2,7 @@
 
 ### Nomadcoders - React Native 마스터클래스 (애니메이션 & 인터랙티브 앱)
 
-애니메이션으로 언어를 배울 수 있는 인터랙티브 react-native 모바일 앱입니다.
+애니메이션으로 단어를 분별할 수 있는 인터랙티브 react-native 모바일 앱입니다.
 
 ---
 

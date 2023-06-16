@@ -3,7 +3,7 @@
         "types": ["react-native", "jest", "styled-components-react-native"],
         "plugins": [
             {
-                "name": "typescript-styled-plugin",
+                "name": "@styled/typescript-styled-plugin",
                 "lint": {
                     "validProperties": [
                         "shadow-color",

@@ -16,10 +16,12 @@
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
     "react-native": "0.71.8",
+    "react-native-reanimated": "^3.3.0",
     "styled-components": "^5.3.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@styled/typescript-styled-plugin": "^1.0.0",
     "@tsconfig/react-native": "^3.0.2",
     "@types/jest": "^29.5.1",
     "@types/react": "^18.2.7",
